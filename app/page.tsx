@@ -1,9 +1,7 @@
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sidebar";
 
-import Image from "next/image";
-
-export default function Home() {
+const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <div className="h-full relative">
@@ -12,8 +10,11 @@ export default function Home() {
         </div>
         <main className="md:pl-72 pb-10">
           <Navbar />
+          {children}
         </main>
       </div>
-    </div>
+  </div>
   );
-}
+};
+
+export default DashboardLayout;
