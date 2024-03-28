@@ -8,10 +8,10 @@ const Navbar = () => {
 
       <Button variant="ghost" size="icon" className="md:hidden">
         <Menu />
+        <h1 className="ml-2">Menu</h1>
       </Button>
 
-      <div className="flex w-full justify-end px-5 py-4">
-      </div>
+      <div className="flex w-full justify-end px-5 py-4"></div>
     </div>
   );
 };
